@@ -373,7 +373,7 @@ class _OutreachScreenState extends ConsumerState<OutreachScreen> {
       ),
     );
   }
-  }
+
 
   // ── Delete confirm ────────────────────────────────────────────────────────
   void _confirmDelete(BuildContext context, OutreachItem item) {
