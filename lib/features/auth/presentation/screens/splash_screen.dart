@@ -83,9 +83,11 @@ class _SplashScreenState extends ConsumerState<SplashScreen> with SingleTickerPr
           context.go(RouteNames.login);
         }
       }
-    } catch (e) {
+    } catch (e, stack) {
+      debugPrint('App initialization error: $e');
+      debugPrint(stack.toString());
       if (mounted) {
-        setState(() => _statusText = 'Initialization failed. Please restart.');
+        setState(() => _statusText = '$_statusText\nFailed! Error: $e');
       }
     }
   }
