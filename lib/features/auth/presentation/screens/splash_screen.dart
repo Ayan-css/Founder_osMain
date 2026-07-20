@@ -138,14 +138,20 @@ class _SplashScreenState extends ConsumerState<SplashScreen> with SingleTickerPr
                 ],
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Text(
+                _statusText,
+                style: TextStyle(
+                  color: _statusText.contains('failed') ? Colors.red : colors.primary,
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
             Expanded(
               child: _statusText.contains('failed')
-                  ? Center(
-                      child: Text(
-                        _statusText,
-                        style: const TextStyle(color: Colors.red),
-                      ),
-                    )
+                  ? const SizedBox() // hide skeleton on fail
                   : const DashboardLoadingSkeleton(),
             ),
           ],

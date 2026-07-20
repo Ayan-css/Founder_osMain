@@ -14,10 +14,12 @@ class WidgetService {
   static const String _targetWidgetName = 'TargetProgressWidgetProvider';
 
   static Future<void> initialize() async {
+    if (kIsWeb) return;
     await HomeWidget.setAppGroupId('group.right_craft_media_os');
   }
 
   static Future<void> syncWidgets() async {
+    if (kIsWeb) return;
     try {
       if (!IsarService.instance.isOpen) return;
 
