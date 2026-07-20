@@ -4,6 +4,7 @@ import 'package:timezone/timezone.dart' as tz;
 import 'database/collections/task_collection.dart';
 import 'database/collections/outreach_collection.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 
 class NotificationService {
   static final NotificationService _instance = NotificationService._();
@@ -15,6 +16,8 @@ class NotificationService {
   NotificationService._();
 
   Future<void> initialize() async {
+    if (kIsWeb) return;
+    
     tz.initializeTimeZones();
 
     const AndroidInitializationSettings initializationSettingsAndroid =
@@ -51,6 +54,7 @@ class NotificationService {
   }
 
   Future<void> scheduleTaskDeadline(TaskItem task) async {
+    if (kIsWeb) return;
     if (task.dueDate == null) return;
     
     final dueDate = task.dueDate!;
@@ -104,6 +108,7 @@ class NotificationService {
   }
 
   Future<void> scheduleFollowUpReminder(OutreachItem item) async {
+    if (kIsWeb) return;
     if (item.followUpDate == null) return;
     
     // Schedule for 9 AM on the follow-up date

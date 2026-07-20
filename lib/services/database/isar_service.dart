@@ -82,12 +82,16 @@ class IsarService {
       _isar = null;
     }
 
-    final dir = await getApplicationDocumentsDirectory();
-    debugPrint('[IsarService] Opening: $dbName at ${dir.path}');
+    String dirPath = '';
+    if (!kIsWeb) {
+      final dir = await getApplicationDocumentsDirectory();
+      dirPath = dir.path;
+    }
+    debugPrint('[IsarService] Opening: $dbName at $dirPath');
 
     _isar = await Isar.open(
       _schemas,
-      directory: dir.path,
+      directory: dirPath,
       name: dbName,
     );
     _currentDbName = dbName;
