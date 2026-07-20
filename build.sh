@@ -7,9 +7,9 @@ else
   git clone https://github.com/flutter/flutter.git -b stable
 fi
 
-export PATH="$PATH:`pwd`/flutter/bin"
-flutter config --enable-web
-flutter pub get
+# Removed PATH export to avoid shell issues
+./flutter/bin/flutter config --enable-web
+./flutter/bin/flutter pub get
 
 echo "Patching Isar files for Web JS compatibility..."
 python3 patch_isar_web.py
@@ -19,4 +19,4 @@ echo "SUPABASE_URL=$SUPABASE_URL" > .env
 echo "SUPABASE_ANON_KEY=$SUPABASE_ANON_KEY" >> .env
 
 echo "Building Flutter Web..."
-flutter build web --release
+./flutter/bin/flutter build web --release
