@@ -15,7 +15,7 @@ extension GetProfileItemCollection on Isar {
 
 const ProfileItemSchema = CollectionSchema(
   name: r'ProfileItem',
-  id: -6923536181486655024,
+  id: 22,
   properties: {
     r'avatarUrl': PropertySchema(
       id: 0,
@@ -75,7 +75,7 @@ const ProfileItemSchema = CollectionSchema(
   idName: r'isarId',
   indexes: {
     r'id': IndexSchema(
-      id: -3268401673993471357,
+      id: 23,
       name: r'id',
       unique: true,
       replace: false,

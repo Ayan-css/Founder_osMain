@@ -15,7 +15,7 @@ extension GetResourceItemCollection on Isar {
 
 const ResourceItemSchema = CollectionSchema(
   name: r'ResourceItem',
-  id: 3892753316752086134,
+  id: 26,
   properties: {
     r'cost': PropertySchema(
       id: 0,
@@ -115,7 +115,7 @@ const ResourceItemSchema = CollectionSchema(
   idName: r'isarId',
   indexes: {
     r'id': IndexSchema(
-      id: -3268401673993471357,
+      id: 27,
       name: r'id',
       unique: true,
       replace: false,

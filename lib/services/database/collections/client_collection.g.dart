@@ -15,7 +15,7 @@ extension GetClientItemCollection on Isar {
 
 const ClientItemSchema = CollectionSchema(
   name: r'ClientItem',
-  id: -3403130170496853433,
+  id: 14,
   properties: {
     r'address': PropertySchema(
       id: 0,
@@ -165,7 +165,7 @@ const ClientItemSchema = CollectionSchema(
   idName: r'isarId',
   indexes: {
     r'id': IndexSchema(
-      id: -3268401673993471357,
+      id: 15,
       name: r'id',
       unique: true,
       replace: false,

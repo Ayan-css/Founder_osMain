@@ -7,6 +7,7 @@ import '../../../../services/database/repositories/outreach_repository.dart';
 import '../../../../services/database/repositories/outreach_activity_repository.dart';
 import '../../../../services/database/collections/outreach_collection.dart';
 import '../../../../core/extensions/context_extensions.dart';
+import '../widgets/outreach_edit_sheet.dart';
 
 class OutreachDetailScreen extends ConsumerWidget {
   final String id;
@@ -107,9 +108,7 @@ class OutreachDetailScreen extends ConsumerWidget {
             title: Text(item.name),
             actions: [
               IconButton(icon: const Icon(Icons.edit_outlined), onPressed: () {
-                // To keep it simple, we don't open the edit sheet here, 
-                // but we could push an edit route or pop back to main outreach screen.
-                context.pop();
+                showOutreachAddEditSheet(context, ref, item);
               }),
             ],
           ),

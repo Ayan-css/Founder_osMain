@@ -15,7 +15,7 @@ extension GetMeetingItemCollection on Isar {
 
 const MeetingItemSchema = CollectionSchema(
   name: r'MeetingItem',
-  id: 75026568398038165,
+  id: 1,
   properties: {
     r'actionItems': PropertySchema(
       id: 0,
@@ -120,7 +120,7 @@ const MeetingItemSchema = CollectionSchema(
   idName: r'isarId',
   indexes: {
     r'id': IndexSchema(
-      id: -3268401673993471357,
+      id: 2,
       name: r'id',
       unique: true,
       replace: false,

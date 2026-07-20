@@ -15,7 +15,7 @@ extension GetKnowledgeItemCollection on Isar {
 
 const KnowledgeItemSchema = CollectionSchema(
   name: r'KnowledgeItem',
-  id: -64976049666290598,
+  id: 12,
   properties: {
     r'category': PropertySchema(
       id: 0,
@@ -85,7 +85,7 @@ const KnowledgeItemSchema = CollectionSchema(
   idName: r'isarId',
   indexes: {
     r'id': IndexSchema(
-      id: -3268401673993471357,
+      id: 13,
       name: r'id',
       unique: true,
       replace: false,

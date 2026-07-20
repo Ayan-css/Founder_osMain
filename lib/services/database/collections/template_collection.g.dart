@@ -15,7 +15,7 @@ extension GetTemplateItemCollection on Isar {
 
 const TemplateItemSchema = CollectionSchema(
   name: r'TemplateItem',
-  id: 3492042616796161138,
+  id: 3,
   properties: {
     r'body': PropertySchema(
       id: 0,
@@ -75,7 +75,7 @@ const TemplateItemSchema = CollectionSchema(
   idName: r'isarId',
   indexes: {
     r'id': IndexSchema(
-      id: -3268401673993471357,
+      id: 4,
       name: r'id',
       unique: true,
       replace: false,

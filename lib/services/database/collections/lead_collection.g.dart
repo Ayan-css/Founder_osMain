@@ -15,7 +15,7 @@ extension GetLeadItemCollection on Isar {
 
 const LeadItemSchema = CollectionSchema(
   name: r'LeadItem',
-  id: 2282501027473665930,
+  id: 24,
   properties: {
     r'company': PropertySchema(
       id: 0,
@@ -110,7 +110,7 @@ const LeadItemSchema = CollectionSchema(
   idName: r'isarId',
   indexes: {
     r'id': IndexSchema(
-      id: -3268401673993471357,
+      id: 25,
       name: r'id',
       unique: true,
       replace: false,

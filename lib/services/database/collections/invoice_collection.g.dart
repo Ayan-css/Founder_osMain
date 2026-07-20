@@ -15,7 +15,7 @@ extension GetInvoiceItemCollection on Isar {
 
 const InvoiceItemSchema = CollectionSchema(
   name: r'InvoiceItem',
-  id: 3489790213250467162,
+  id: 20,
   properties: {
     r'agencyGstInfo': PropertySchema(
       id: 0,
@@ -145,7 +145,7 @@ const InvoiceItemSchema = CollectionSchema(
   idName: r'isarId',
   indexes: {
     r'id': IndexSchema(
-      id: -3268401673993471357,
+      id: 21,
       name: r'id',
       unique: true,
       replace: false,

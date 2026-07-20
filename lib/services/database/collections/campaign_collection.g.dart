@@ -15,7 +15,7 @@ extension GetCampaignItemCollection on Isar {
 
 const CampaignItemSchema = CollectionSchema(
   name: r'CampaignItem',
-  id: -5543352849408156044,
+  id: 9,
   properties: {
     r'createdAt': PropertySchema(
       id: 0,
@@ -70,7 +70,7 @@ const CampaignItemSchema = CollectionSchema(
   idName: r'isarId',
   indexes: {
     r'id': IndexSchema(
-      id: -3268401673993471357,
+      id: 10,
       name: r'id',
       unique: true,
       replace: false,

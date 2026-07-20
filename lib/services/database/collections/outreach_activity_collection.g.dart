@@ -15,7 +15,7 @@ extension GetOutreachActivityCollection on Isar {
 
 const OutreachActivitySchema = CollectionSchema(
   name: r'OutreachActivity',
-  id: -7044405387623788391,
+  id: 30,
   properties: {
     r'createdAt': PropertySchema(
       id: 0,
@@ -75,7 +75,7 @@ const OutreachActivitySchema = CollectionSchema(
   idName: r'isarId',
   indexes: {
     r'id': IndexSchema(
-      id: -3268401673993471357,
+      id: 31,
       name: r'id',
       unique: true,
       replace: false,
@@ -88,7 +88,7 @@ const OutreachActivitySchema = CollectionSchema(
       ],
     ),
     r'outreachItemId': IndexSchema(
-      id: 9001734018648594106,
+      id: 32,
       name: r'outreachItemId',
       unique: false,
       replace: false,

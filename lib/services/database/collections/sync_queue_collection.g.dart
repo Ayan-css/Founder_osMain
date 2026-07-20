@@ -15,7 +15,7 @@ extension GetSyncQueueItemCollection on Isar {
 
 const SyncQueueItemSchema = CollectionSchema(
   name: r'SyncQueueItem',
-  id: 599395208720970483,
+  id: 11,
   properties: {
     r'collectionName': PropertySchema(
       id: 0,

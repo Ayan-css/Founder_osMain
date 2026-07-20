@@ -15,7 +15,7 @@ extension GetOutreachItemCollection on Isar {
 
 const OutreachItemSchema = CollectionSchema(
   name: r'OutreachItem',
-  id: 1409202417195618319,
+  id: 36,
   properties: {
     r'campaignId': PropertySchema(
       id: 0,
@@ -100,7 +100,7 @@ const OutreachItemSchema = CollectionSchema(
   idName: r'isarId',
   indexes: {
     r'id': IndexSchema(
-      id: -3268401673993471357,
+      id: 37,
       name: r'id',
       unique: true,
       replace: false,

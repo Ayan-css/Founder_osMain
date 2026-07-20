@@ -15,7 +15,7 @@ extension GetTaskItemCollection on Isar {
 
 const TaskItemSchema = CollectionSchema(
   name: r'TaskItem',
-  id: 2171180427076855156,
+  id: 16,
   properties: {
     r'createdAt': PropertySchema(
       id: 0,
@@ -90,7 +90,7 @@ const TaskItemSchema = CollectionSchema(
   idName: r'isarId',
   indexes: {
     r'id': IndexSchema(
-      id: -3268401673993471357,
+      id: 17,
       name: r'id',
       unique: true,
       replace: false,

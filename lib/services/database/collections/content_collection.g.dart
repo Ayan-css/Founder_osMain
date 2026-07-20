@@ -15,7 +15,7 @@ extension GetContentItemCollection on Isar {
 
 const ContentItemSchema = CollectionSchema(
   name: r'ContentItem',
-  id: -3800002479438537506,
+  id: 7,
   properties: {
     r'attachmentUrls': PropertySchema(
       id: 0,
@@ -120,7 +120,7 @@ const ContentItemSchema = CollectionSchema(
   idName: r'isarId',
   indexes: {
     r'id': IndexSchema(
-      id: -3268401673993471357,
+      id: 8,
       name: r'id',
       unique: true,
       replace: false,

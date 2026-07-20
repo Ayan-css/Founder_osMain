@@ -15,7 +15,7 @@ extension GetFocusSessionCollection on Isar {
 
 const FocusSessionSchema = CollectionSchema(
   name: r'FocusSession',
-  id: 7529488139707530527,
+  id: 5,
   properties: {
     r'completed': PropertySchema(
       id: 0,
@@ -85,7 +85,7 @@ const FocusSessionSchema = CollectionSchema(
   idName: r'isarId',
   indexes: {
     r'id': IndexSchema(
-      id: -3268401673993471357,
+      id: 6,
       name: r'id',
       unique: true,
       replace: false,

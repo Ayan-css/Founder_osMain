@@ -15,7 +15,7 @@ extension GetActivityLogItemCollection on Isar {
 
 const ActivityLogItemSchema = CollectionSchema(
   name: r'ActivityLogItem',
-  id: -9045115823831533469,
+  id: 28,
   properties: {
     r'action': PropertySchema(
       id: 0,
@@ -60,7 +60,7 @@ const ActivityLogItemSchema = CollectionSchema(
   idName: r'isarId',
   indexes: {
     r'id': IndexSchema(
-      id: -3268401673993471357,
+      id: 29,
       name: r'id',
       unique: true,
       replace: false,
